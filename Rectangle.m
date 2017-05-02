@@ -8,13 +8,25 @@
 
 #import "Rectangle.h"
 
-@implementation Rectangle
+@implementation Rectangle{
+    
+    XYPoint *origin; // origin объект класса XYPoint (точка)
+}
 
-    @synthesize width, hight;
+
+@synthesize width, hight;
 
 - (void)setWidht:(int)w andHight:(int)h {
     width = w;
     hight = h;
+}
+
+- (void)setOrigin:(XYPoint *)pt {  // устанавливаем начальную точку
+    if (!origin) {
+        origin = [[XYPoint alloc] init];
+        origin.x = pt.x;
+        origin.y = pt.y;
+    }
 }
 
 - (int)area {
@@ -23,6 +35,10 @@
 
 - (int)perimeter {
     return (width + hight) * 2;
+}
+
+- (XYPoint *)origin {
+    return  origin;
 }
 
 @end

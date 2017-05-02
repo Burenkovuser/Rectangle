@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "Rectangle.h"
 #import "Square.h"
+#import "XYPoint.h"
 
 
 @interface AppDelegate ()
@@ -21,9 +22,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     Rectangle *myRect = [[Rectangle alloc] init];
+    XYPoint *myPoint = [[XYPoint alloc] init];
+    
+    [myPoint setX:100 setY:200];
     
     [myRect setWidht:5 andHight:8];
+    myRect.origin = myPoint;
+    
+    
     NSLog(@"Прямоугольник: w = %i, h = %i", myRect.width, myRect.hight);
+    NSLog(@"Начало в (%i, %i)", myRect.origin.x, myRect.origin.y);
     NSLog(@"Плошадь прямоугольника: %i. Периметр прямоугольника: %i", [myRect area], [myRect perimeter]);
     
     Square *mySquare = [[Square alloc]init];
@@ -32,7 +40,10 @@
     
     NSLog(@"Квадрат s = %i", mySquare.side);
     NSLog(@"Плошадь квадрата: %i. Периметр квадрата: %i", [mySquare area], [mySquare perimeter]);
-    
+    /*
+    [myPoint setX:50 setY:50];
+    NSLog(@"Начало в (%i, %i)", myRect.origin.x, myRect.origin.y); 
+     */
     return YES;
 }
 

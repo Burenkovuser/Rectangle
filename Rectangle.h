@@ -7,12 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "XYPoint.h"
 
 @interface Rectangle : NSObject
 
+
 @property int width, hight;
+
+-(XYPoint *) origin;//метод начала координат
+-(void) setOrigin: (XYPoint *) pt;
+-(void) setWidht:(int)w andHight:(int) h;
 -(int) area;
 -(int) perimeter;
--(void) setWidht:(int)w andHight:(int) h;
+
 
 @end
