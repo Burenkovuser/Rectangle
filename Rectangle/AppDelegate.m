@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "Rectangle.h"
+#import "Square.h"
 
 
 @interface AppDelegate ()
@@ -24,6 +25,13 @@
     [myRect setWidht:5 andHight:8];
     NSLog(@"Прямоугольник: w = %i, h = %i", myRect.width, myRect.hight);
     NSLog(@"Плошадь прямоугольника: %i. Периметр прямоугольника: %i", [myRect area], [myRect perimeter]);
+    
+    Square *mySquare = [[Square alloc]init];
+    
+    [mySquare setSide:5];
+    
+    NSLog(@"Квадрат s = %i", mySquare.side);
+    NSLog(@"Плошадь квадрата: %i. Периметр квадрата: %i", [mySquare area], [mySquare perimeter]);
     
     return YES;
 }

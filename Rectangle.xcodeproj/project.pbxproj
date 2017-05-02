@@ -14,6 +14,7 @@
 		FBC53A9C1EB4620900497A63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC53A9B1EB4620900497A63 /* Assets.xcassets */; };
 		FBC53A9F1EB4620900497A63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC53A9D1EB4620900497A63 /* LaunchScreen.storyboard */; };
 		FBC53AA81EB4623000497A63 /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC53AA71EB4623000497A63 /* Rectangle.m */; };
+		FBC53B371EB88DE000497A63 /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC53B361EB88DE000497A63 /* Square.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		FBC53AA01EB4620900497A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBC53AA61EB4623000497A63 /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = SOURCE_ROOT; };
 		FBC53AA71EB4623000497A63 /* Rectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = SOURCE_ROOT; };
+		FBC53B351EB88DE000497A63 /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
+		FBC53B361EB88DE000497A63 /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 			children = (
 				FBC53AA61EB4623000497A63 /* Rectangle.h */,
 				FBC53AA71EB4623000497A63 /* Rectangle.m */,
+				FBC53B351EB88DE000497A63 /* Square.h */,
+				FBC53B361EB88DE000497A63 /* Square.m */,
 				FBC53A921EB4620900497A63 /* AppDelegate.h */,
 				FBC53A931EB4620900497A63 /* AppDelegate.m */,
 				FBC53A951EB4620900497A63 /* ViewController.h */,
@@ -158,6 +163,7 @@
 				FBC53A971EB4620900497A63 /* ViewController.m in Sources */,
 				FBC53A941EB4620900497A63 /* AppDelegate.m in Sources */,
 				FBC53A911EB4620900497A63 /* main.m in Sources */,
+				FBC53B371EB88DE000497A63 /* Square.m in Sources */,
 				FBC53AA81EB4623000497A63 /* Rectangle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +321,7 @@
 				FBC53AA51EB4620900497A63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
