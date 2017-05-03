@@ -40,6 +40,54 @@
     
     NSLog(@"Квадрат s = %i", mySquare.side);
     NSLog(@"Плошадь квадрата: %i. Периметр квадрата: %i", [mySquare area], [mySquare perimeter]);
+    
+    
+    //Вопроссы о классах
+    
+    //isMemberOf
+    
+    if ([mySquare isMemberOfClass:[Square class]] == YES) {
+        NSLog(@"mySquare является членом класса Square");
+    }
+    if ([mySquare isMemberOfClass:[Rectangle class]] == YES) {
+        NSLog(@"mySquare является членом класса Rectangle");
+    }
+    if ([mySquare isMemberOfClass:[NSObject class]] == YES) {
+        NSLog(@"mySquare является членом класса NSObject");
+    }
+    
+    //is KindOf
+    
+    if ([mySquare isKindOfClass:[Square class]] == YES) {
+        NSLog(@"mySquare является членом класса или подкласса Square");
+    }
+    if ([mySquare isKindOfClass:[Rectangle class]] == YES) {
+        NSLog(@"mySquare является членом класса или подкласса Rectangle");
+    }
+    if ([mySquare isKindOfClass:[NSObject class]] == YES) {
+        NSLog(@"mySquare является членом класса или подкласса NSObject");
+    }
+    
+    //respondsTo
+    if ([mySquare respondsToSelector:@selector(setSide:)] == YES) {
+        NSLog(@"mySquare реагирует на метод setSide");
+    }
+    if ([mySquare respondsToSelector:@selector(setWidht:andHight:)] == YES) {
+        NSLog(@"mySquare реагирует на метод setWidht:andHight");
+    }
+    if ([Square respondsToSelector:@selector(alloc)] == YES) {
+        NSLog(@"Класс Square реагирует на метод alloc");
+    }
+    if ([Rectangle instancesRespondToSelector:@selector(setSide:)] == YES) {
+        NSLog(@"Экземпляры класса Rectangle реагируют на метод setSide");
+    }
+    if ([Square instancesRespondToSelector:@selector(setSide:)] == YES) {
+        NSLog(@"Экземпляры класса Square реагируют на метод setSide");
+    }
+    if ([Square isSubclassOfClass:[Rectangle class]] == YES) {
+        NSLog(@"Square это подкласс прямоугольника");
+    }
+  
     /*
     [myPoint setX:50 setY:50];
     NSLog(@"Начало в (%i, %i)", myRect.origin.x, myRect.origin.y); 
